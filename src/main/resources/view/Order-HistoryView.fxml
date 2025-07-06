@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="orderTable" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="orderNumberColumn" prefWidth="75.0" text="Order No." />
+                <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Date &amp; Time" />
+                <TableColumn fx:id="totalPriceColumn" prefWidth="75.0" text="Total Price" />
+            </columns>
+        </TableView>
+        <Button fx:id="backButton" mnemonicParsing="false" text="Go Back" />
+        <Button fx:id="exportOrdersButton" mnemonicParsing="false" onAction="#handleExportOrders" text="Export Your Orders" />
+    </children>
+</VBox>
